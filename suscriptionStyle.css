@@ -1,0 +1,16 @@
+.principal{
+    margin: 200px;
+}
+
+.planContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.plan{
+    color: white;
+    background: black;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+}
