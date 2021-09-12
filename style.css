@@ -130,6 +130,19 @@ header{
   padding: 50px;
   display: flex;
   flex-wrap: nowrap;
+  
+}
+
+.p-content > div{
+  max-width: 700px;
+  margin: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px #63616186;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  
+
 }
 
 .p-content > div:first-child{
