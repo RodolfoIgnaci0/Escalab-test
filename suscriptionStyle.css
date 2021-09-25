@@ -1,16 +1,42 @@
 .principal{
-    margin: 200px;
+    margin: 150px;
+    background: rgba(187, 187, 187, 0.363);
+    border: 1px solid rgba(187, 187, 187, 0.9);
+    border-radius: 5px;
+    padding: 50px;
 }
 
 .planContainer{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .plan{
     color: white;
-    background: black;
+    background: rgb(35, 80, 33);
     padding: 50px;
     margin: 50px;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 1626px) {
+    .plan{
+        height: 100px;
+        width: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 1002px) {
+    .plan{
+        height: 80px;
+        width: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .plan{
+        height: auto;
+        width: auto;
+    }
+  }

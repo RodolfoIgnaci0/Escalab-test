@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./suscriptionStyle.css">
     <script src="./js/modal.js"></script>
+    <script src="./js/discount.js"></script>
   </head>
   <body>
     <header>
@@ -28,27 +29,28 @@
 
     <section class="principal">
         <h2>Plan de suscripción</h2>
-        <p>Contamos con distintos planes de suscripción, los cuales contemplan descuentos</p>
+        <p>Contamos con distintos planes de suscripción, los cuales te permitiran publicar tu camping junto la opción de solicitar reserva desde el mismo sitio. Además nuestros planes 
+          contemplan descuentos mientras mayor sea el tiempo que desees trabajar junto a nosotros</p>
 
         <div class="planContainer">
             <div class="plan">
                 <h3>Mensual</h3>
-                <p>$10.000</p>
+                <p id="mescost">$</p>
             </div>
             <div class="plan">
                 <h3>Trimestral</h3>
-                <p>$28.000</p>
-                <p>Descuento $2.000</p>
+                <p id="tricost">28000</p>
+                <p id="tritotal">Descuento <span>$2.000</span></p>
             </div>
             <div class="plan">
                 <h3>Semestral</h3>
-                <p>$55.000</p>
-                <p>Descuento $5.000</p>
+                <p id="semcost">$55.000</p>
+                <p id="semtotal">Descuento $5.000</p>
             </div>
             <div class="plan">
                 <h3>Anual</h3>
-                <p>$100.000</p>
-                <p>Descuento $20.000</p>
+                <p id="anucost">$100.000</p>
+                <p id="anutotal">Descuento $20.000</p>
             </div>
         </div>
     </section>
@@ -77,7 +79,7 @@
                   <label for="">Descripción de Consulta</label>
                   <textarea name="comment" id="cComment" placeholder="Ingrese el comentario" ></textarea>
 
-                  <button type="button" class="btnSubmit" onclick="addProduct()">Enviar</button>
+                  <button type="button" class="btnSubmit" id="submit" onclick="cerrar()">Enviar</button>
               </form>
           </div>
       </div>
